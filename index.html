@@ -15,16 +15,18 @@
     >
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/pamphlet-front.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header" aria-label="ページヘッダー">
       <a class="brand" href="#top" aria-label="中村ちから トップへ">
-        <span class="brand__area">神戸市政【垂水区】</span>
-        <span class="brand__name">中村ちから</span>
+        <img src="assets/logo-header.png" alt="立憲民主党 神戸市政 垂水区 中村ちから">
       </a>
       <nav class="nav" aria-label="主要ナビゲーション">
-        <a href="#vision">想い</a>
+        <a href="#vision">中村ちからの想い</a>
         <a href="#actions">政策(4つのちから)</a>
         <a href="#profile">中村ちからって？</a>
         <a href="#supporters-title">仲間たち</a>
@@ -34,45 +36,23 @@
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero__copy">
-          <p class="eyebrow">垂水からバトンを繋ぐ</p>
-          <h1 id="hero-title">
-            <span class="hero-title__sub"><span>垂水のまちを</span><span>対話の力で支える。</span></span>
-            <strong>
-              <span class="hero-main-line"><span class="hero-main-prefix">このま</span><span class="emphasis-dots">ちから</span></span>
-              <span class="hero-main-line"><span class="hero-main-prefix">次の</span><span class="emphasis-dots">ちから</span><span class="hero-main-prefix">に。</span></span>
-            </strong>
-          </h1>
-          <p class="hero__lead">
-            教室から議会へ。元教師・中村ちからは、子どもたちの笑顔を守れる社会と、
-            誰一人取り残さないまちを垂水からつくるために挑戦します。
-          </p>
-          <div class="hero__actions">
-            <a class="button button--primary" href="https://forms.gle/xyLZm7uFSbMcXTNT6" target="_blank" rel="noopener">サポーターズに参加する</a>
-          </div>
-          <nav class="hero__quick-links" aria-label="ページ内リンク">
-            <a href="#vision">中村ちからの挑戦</a>
-            <a href="#actions">政策(4つのちから)</a>
-            <a href="#profile">中村ちからって？</a>
-            <a href="#supporters-title">仲間たち</a>
-          </nav>
-        </div>
-        <div class="hero__visual" aria-label="バトンをつなぐメインビジュアル">
-          <img src="assets/hero-baton.png" alt="垂水のまちを対話のちからで支える、中村ちからのパンフレットビジュアル">
-        </div>
+        <h1 id="hero-title" class="visually-hidden">垂水のまちを対話の力で支える。このまちから、つぎのちからに。中村ちから</h1>
+        <picture class="hero__mv">
+          <source media="(max-width: 620px)" srcset="assets/hero-mv-sp.png">
+          <img src="assets/hero-mv-pc.png" alt="垂水のまちを対話の力で支える。このまちから、つぎのちからに。中村ちから">
+        </picture>
       </section>
 
       <section class="intro section" id="vision" aria-labelledby="intro-title">
-        <div class="section__label">あなたとトモニ</div>
         <div class="intro__grid">
           <div class="intro__media">
             <div>
-              <span class="sub-badge">元教師・神戸市立小学校で19年間勤務</span>
-              <h2 id="intro-title"><span>垂水から繋いでいく、</span><span>中村ちからの挑戦。</span></h2>
+              <h2 id="intro-title" class="intro-title">
+                <span>あなたと<span class="text-red">トモニ</span></span>
+                <span><span class="text-red">垂水</span>から</span>
+                <span>繋いでいく</span>
+              </h2>
             </div>
-            <p class="large">
-              私は夢にまで見た教員の道を離れ、政治に挑戦します。
-            </p>
           </div>
           <div class="prose">
             <p>
@@ -87,6 +67,9 @@
               でも、それは私一人ではできません。一人ひとりの“ちから”が必要です。
               対話を通してあなたの声を“ちから”に変え、次の世代が希望を持てる社会を実現します。
             </p>
+            <p>
+              未来のバトンを、ここ垂水から、トモニ繋いでいきましょう！
+            </p>
             <a class="button button--secondary section-button" href="#actions">中村ちからの政策を見る</a>
           </div>
         </div>
@@ -94,29 +77,35 @@
 
       <section class="photo-story" aria-labelledby="photo-story-title">
         <div class="photo-story__copy">
-          <span class="section__label">教室から議会へ</span>
-          <h2 id="photo-story-title"><span>あの日の教室も、</span><span>いま立つ教室も。</span></h2>
+          <span class="photo-story__badge">元教師・神戸市立小学校で19年間勤務</span>
+          <h2 id="photo-story-title"><span>中村ちからの</span><span>挑戦。</span></h2>
           <p>
-            子どもたちと向き合ってきた時間を、これからの垂水のまちづくりへ。
-            過去と現在をつなぎ、次の世代へ希望のバトンを渡していきます。
+            夢にまで見た教員の道を離れ、<br>
+            政治に挑戦します！
           </p>
         </div>
         <div class="polaroids" aria-label="現在と過去の写真">
           <figure class="polaroid polaroid--current">
             <img src="assets/chikara-current.jpg" alt="黒板の前に立つ現在の中村ちから">
-            <figcaption>現在 / 教室からもう一度</figcaption>
+            <figcaption>教室から議会へ！<br>次の世代へバトンを繋ぎます</figcaption>
           </figure>
           <figure class="polaroid polaroid--past">
             <img src="assets/chikara-past.jpg" alt="教員時代、教室で子どもたちの前に立つ中村ちから">
-            <figcaption>過去 / 子どもたちと向き合った日々</figcaption>
+            <figcaption>子どもたちと向き合った時間を<br>これからの垂水のまちづくりへ</figcaption>
           </figure>
+        </div>
+      </section>
+
+      <section class="video-placeholder" aria-label="動画仮置き">
+        <div class="video-placeholder__frame">
+          <span>VIDEO</span>
+          <p>動画を配置予定</p>
         </div>
       </section>
 
       <section class="promise section" aria-labelledby="promise-title">
         <div class="promise__inner">
           <div>
-            <p class="eyebrow">垂水とトモニ</p>
             <h2 id="promise-title">人にやさしく、<br>人が輝くまちへ。</h2>
           </div>
           <div class="prose">
@@ -129,7 +118,6 @@
               安心や希望を感じ、誰もが挑戦できるまち。
               人にやさしく、人が輝くまちを、垂水からつくりたい。
             </p>
-            <a class="button button--light section-button" href="https://forms.gle/xyLZm7uFSbMcXTNT6" target="_blank" rel="noopener">この挑戦を支える</a>
           </div>
         </div>
       </section>
@@ -144,6 +132,7 @@
         <div class="policy-board">
           <article class="policy-column">
             <div class="force-card">
+              <h3 class="policy-card-title">教育のちから</h3>
               <span class="from">画一化</span>
               <span class="to">多様性</span>
               <p>
@@ -151,7 +140,7 @@
                 一人ひとりの個性や可能性を大切にする教育へ。
               </p>
             </div>
-            <div class="down-arrow" aria-hidden="true">↓</div>
+            <div class="down-arrow" aria-hidden="true">▼</div>
             <div class="action-list">
               <h3>アクション</h3>
               <ul>
@@ -167,6 +156,7 @@
 
           <article class="policy-column">
             <div class="force-card">
+              <h3 class="policy-card-title">福祉のちから</h3>
               <span class="from">孤独・不安</span>
               <span class="to">安心・支え合い</span>
               <p>
@@ -174,7 +164,7 @@
                 共に支え合い、自分らしく輝ける共生のまちへ。
               </p>
             </div>
-            <div class="down-arrow" aria-hidden="true">↓</div>
+            <div class="down-arrow" aria-hidden="true">▼</div>
             <div class="action-list">
               <h3>アクション</h3>
               <ul>
@@ -190,6 +180,7 @@
 
           <article class="policy-column">
             <div class="force-card">
+              <h3 class="policy-card-title">街のちから</h3>
               <span class="from">縮小</span>
               <span class="to">循環</span>
               <p>
@@ -197,7 +188,7 @@
                 人とお金が地域で循環する、持続可能で元気な垂水へ。
               </p>
             </div>
-            <div class="down-arrow" aria-hidden="true">↓</div>
+            <div class="down-arrow" aria-hidden="true">▼</div>
             <div class="action-list">
               <h3>アクション</h3>
               <ul>
@@ -212,6 +203,7 @@
 
           <article class="policy-column">
             <div class="force-card">
+              <h3 class="policy-card-title">対話のちから</h3>
               <span class="from">無関心・対立</span>
               <span class="to">参加・対話</span>
               <p>
@@ -219,7 +211,7 @@
                 誰もが声を届け、対話しながらまちをつくれる垂水へ。
               </p>
             </div>
-            <div class="down-arrow" aria-hidden="true">↓</div>
+            <div class="down-arrow" aria-hidden="true">▼</div>
             <div class="action-list">
               <h3>アクション</h3>
               <ul>
@@ -238,21 +230,28 @@
         <div class="profile__intro">
           <span class="section__label">熱血人生</span>
           <h2 id="profile-title"><span>中村ちから</span><small>ってどんな人？</small></h2>
-          <img src="assets/profile-soccer.jpg" alt="サッカーボールを持つ中村ちから">
+          <img src="assets/profile-soccer.png" alt="サッカーボールを持つ中村ちから">
+          <ul class="profile-facts">
+            <li>1984年2月24日 / 広島県福山市生まれ</li>
+            <li>家族：妻 長男(中2) 次男＆長女(小5双子)</li>
+            <li>神戸大学 発達科学部卒業 特別支援教育専攻</li>
+            <li>学生時代 アメリカ・ネパールの学校多数訪問</li>
+            <li>神戸市立小学校で19年間勤務</li>
+          </ul>
         </div>
 
         <ol class="timeline">
           <li>
-            <b class="hand-note">小5の決意</b>
+            <b class="hand-note">夢と出逢ったきっかけ！</b>
             <span>小学5年生</span>
             <p>
               恩師・松浦先生と出逢う。“マラソン大会ズル休み事件”をきっかけに、
               先生の向き合い方に心を動かされ、将来は絶対に教師になると決意。
             </p>
-            <img class="timeline-note-image" src="assets/grade5-note.png" alt="小5の決意を表す手書きメモ">
+            <img class="timeline-note-image timeline-note-image--wide" src="assets/grade5-note.png" alt="小5の決意を表す手書きメモ">
           </li>
           <li>
-            <b class="hand-note">神戸で働く</b>
+            <b class="hand-note">憧れの神戸へ！</b>
             <span>大学時代</span>
             <p>
               教員になることだけを夢見て、隙あらば神戸市の小学校でのボランティア活動に勤しむ。
@@ -262,7 +261,7 @@
             <div class="timeline-school">神戸大学 発達科学部<br>特別支援教育専攻　卒業</div>
           </li>
           <li>
-            <b class="hand-note">教育一筋19年</b>
+            <b class="hand-note">夢だった教師へ！</b>
             <span>教員時代</span>
             <p>
               休み時間も放課後も全力で子どもたちと遊び、家庭訪問では“いかなご”の差し入れを山ほどいただくことも(笑)
@@ -272,7 +271,7 @@
             <img class="timeline-note-image timeline-note-image--wide" src="assets/teacher-19-note.png" alt="教育一筋19年を表す手書きメモ">
           </li>
           <li>
-            <b class="hand-note">教室から議会へ</b>
+            <b class="hand-note">安心できる社会をつくりたい！</b>
             <span>政治の世界へ</span>
             <p>
               教員の働き方改革により、教育現場の良さが失われていく現実を見過ごすことができず、
@@ -303,7 +302,7 @@
                 <p>長男・次男＆長女(双子)に恵まれ、子育てに奮闘。</p>
               </div>
             </article>
-            <article class="activity-card activity-card--compact">
+            <article class="activity-card activity-card--compact activity-card--award">
               <img src="assets/activity-award.png" alt="夢スピーチアワード2025グランプリ受賞">
               <div>
                 <strong>夢スピーチアワード2025</strong>
@@ -391,18 +390,61 @@
           </div>
         </div>
       </section>
+
+      <section class="office-contact" aria-labelledby="office-contact-title">
+        <h2 id="office-contact-title">中村ちからサポーターズ事務局</h2>
+        <div class="office-contact__actions" aria-label="事務局への連絡先">
+          <a class="office-contact__button" href="tel:08014533102">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.68 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.84.55 2.8.68A2 2 0 0 1 22 16.92Z"/>
+              </svg>
+            </span>
+            <strong>080-1453-3102</strong>
+          </a>
+          <a class="office-contact__button office-contact__button--mail" href="mailto:chikaranakamura.kobe@gmail.com">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/>
+                <path d="m22 7-10 6L2 7"/>
+              </svg>
+            </span>
+            <strong>メールお問い合わせ</strong>
+            <small>chikaranakamura.kobe@gmail.com</small>
+          </a>
+        </div>
+        <div class="office-contact__sns" aria-label="SNS">
+          <span>Instagram</span>
+          <span>YouTube</span>
+          <span>X</span>
+          <span>TikTok</span>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-      <div>
+      <div class="footer__contact">
         <strong>中村ちからサポーターズ事務局</strong>
-        <p>080-1453-3102 / chikaranakamura.kobe@gmail.com</p>
+        <div class="footer__links">
+          <a href="tel:08014533102">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.68 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.84.55 2.8.68A2 2 0 0 1 22 16.92Z"/>
+            </svg>
+            <span>080-1453-3102</span>
+          </a>
+          <a href="mailto:chikaranakamura.kobe@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/>
+              <path d="m22 7-10 6L2 7"/>
+            </svg>
+            <span>chikaranakamura.kobe@gmail.com</span>
+          </a>
+        </div>
       </div>
-      <a href="https://forms.gle/xyLZm7uFSbMcXTNT6" target="_blank" rel="noopener">後援会加入フォーム</a>
     </footer>
 
     <a class="floating-cta" href="https://forms.gle/xyLZm7uFSbMcXTNT6" target="_blank" rel="noopener">
-      サポーターズに参加
+      後援会に加入
     </a>
   </body>
 </html>
