@@ -15,10 +15,11 @@
     >
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/pamphlet-front.png">
+    <link rel="icon" href="favicon.ico" sizes="32x32">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260604-hero-white-bg">
   </head>
   <body>
     <header class="site-header" aria-label="ページヘッダー">
@@ -31,14 +32,17 @@
         <a href="#profile">中村ちからって？</a>
         <a href="#supporters-title">仲間たち</a>
       </nav>
-      <a class="header-cta" href="https://forms.gle/xyLZm7uFSbMcXTNT6" target="_blank" rel="noopener">後援会に加入</a>
+      <a class="header-cta" href="https://forms.gle/xyLZm7uFSbMcXTNT6" target="_blank" rel="noopener">
+        <span class="header-cta__main">後援会加入</span>
+        <span class="header-cta__sub">中村ちからサポーターズ</span>
+      </a>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <h1 id="hero-title" class="visually-hidden">垂水のまちを対話の力で支える。このまちから、つぎのちからに。中村ちから</h1>
         <picture class="hero__mv">
-          <source media="(max-width: 620px)" srcset="assets/hero-mv-sp.png">
+          <source media="(max-width: 820px)" srcset="assets/hero-mv-sp.png">
           <img src="assets/hero-mv-pc.png" alt="垂水のまちを対話の力で支える。このまちから、つぎのちからに。中村ちから">
         </picture>
       </section>
@@ -50,7 +54,7 @@
               <h2 id="intro-title" class="intro-title">
                 <span>あなたと<span class="text-red">トモニ</span></span>
                 <span><span class="text-red">垂水</span>から</span>
-                <span>繋いでいく</span>
+                <span><ruby>繋<rt>つな</rt></ruby>いでいく</span>
               </h2>
             </div>
           </div>
@@ -96,10 +100,9 @@
         </div>
       </section>
 
-      <section class="video-placeholder" aria-label="動画仮置き">
+      <section class="video-placeholder" aria-label="中村ちからの挑戦 動画">
         <div class="video-placeholder__frame">
-          <span>VIDEO</span>
-          <p>動画を配置予定</p>
+          <video src="assets/chikara-challenge-movie.mp4" controls playsinline preload="metadata"></video>
         </div>
       </section>
 
@@ -120,6 +123,7 @@
             </p>
           </div>
         </div>
+        <img class="promise__image" src="assets/tarumi-collage.png" alt="垂水のまちと中村ちからの写真">
       </section>
 
       <section class="actions section" id="actions" aria-labelledby="actions-title">
@@ -146,10 +150,10 @@
               <ul>
               <li>少人数学級の拡充</li>
               <li>不登校支援の強化</li>
-              <li>探究学習・起業家教育</li>
-              <li>オーガニック給食など食育の推進</li>
+              <li>探究学習・起業家教育の推進</li>
+              <li>オーガニック給食や食育の推進</li>
               <li>多様な学びの選択肢の充実</li>
-              <li>子ども食堂など、子どもや保護者への支援</li>
+              <li>子ども食堂やユースセンターなど、校外での居場所づくり</li>
               </ul>
             </div>
           </article>
@@ -233,7 +237,7 @@
           <img src="assets/profile-soccer.png" alt="サッカーボールを持つ中村ちから">
           <ul class="profile-facts">
             <li>1984年2月24日 / 広島県福山市生まれ</li>
-            <li>家族：妻 長男(中2) 次男＆長女(小5双子)</li>
+            <li>家族：妻 / 長男 / 次男＆長女(双子)</li>
             <li>神戸大学 発達科学部卒業 特別支援教育専攻</li>
             <li>学生時代 アメリカ・ネパールの学校多数訪問</li>
             <li>神戸市立小学校で19年間勤務</li>
@@ -245,8 +249,7 @@
             <b class="hand-note">夢と出逢ったきっかけ！</b>
             <span>小学5年生</span>
             <p>
-              恩師・松浦先生と出逢う。“マラソン大会ズル休み事件”をきっかけに、
-              先生の向き合い方に心を動かされ、将来は絶対に教師になると決意。
+              恩師・松浦先生と出会う。 学級通信や子どもたちの作文を通して、一人ひとりと丁寧に向き合い、心を通わせる教育に感動。 子ども、保護者、地域がつながり、深い信頼関係の中で、自分でも驚く程に成長を実感する“教育のちから”に憧れ、教師を志す原点となる。  
             </p>
             <img class="timeline-note-image timeline-note-image--wide" src="assets/grade5-note.png" alt="小5の決意を表す手書きメモ">
           </li>
@@ -254,9 +257,7 @@
             <b class="hand-note">憧れの神戸へ！</b>
             <span>大学時代</span>
             <p>
-              教員になることだけを夢見て、隙あらば神戸市の小学校でのボランティア活動に勤しむ。
-              その時に出会った素晴らしい先生方に憧れ、「絶対神戸で働く！」という強い意志のもと、
-              採用試験は神戸だけを受験。無事に合格！！
+              教員になることを夢見て、 授業の合間をぬって神戸市立小学校でのボランティア活動に励む。 その中で出会った素晴らしい先生方の姿、 そして「人は人によって人になる」という神戸市の教育理念に深く共感。 「絶対に神戸で働く！」という強い意志のもと、 採用試験は神戸市だけを受験し、合格。
             </p>
             <div class="timeline-school">神戸大学 発達科学部<br>特別支援教育専攻　卒業</div>
           </li>
@@ -264,9 +265,7 @@
             <b class="hand-note">夢だった教師へ！</b>
             <span>教員時代</span>
             <p>
-              休み時間も放課後も全力で子どもたちと遊び、家庭訪問では“いかなご”の差し入れを山ほどいただくことも(笑)
-              外部の勉強会や教職委員会にも積極的に参加。様々な経験を通して自ら学ぶことを大切に、“教育”と向き合い続ける。
-              神戸市立小学校で教師として19年間勤務。
+              子どもたちと本気で向き合うだけでなく、 学級通信や家庭訪問、懇談会を通して、保護者との対話と信頼関係を大切にしてきた。 家庭訪問では、“いかなご”の差し入れを大量にいただくほど、温かなつながりにも恵まれる（笑） 全国各地、時には海外の外部研修や勉強会にも積極的に参加し、 「教師自身が学び続けること」を大切に、教育に向き合い続ける。
             </p>
             <img class="timeline-note-image timeline-note-image--wide" src="assets/teacher-19-note.png" alt="教育一筋19年を表す手書きメモ">
           </li>
@@ -274,9 +273,7 @@
             <b class="hand-note">安心できる社会をつくりたい！</b>
             <span>政治の世界へ</span>
             <p>
-              教員の働き方改革により、教育現場の良さが失われていく現実を見過ごすことができず、
-              苦渋の決断の末、教員を辞めて政治の世界へ飛び込むことを決意。
-              教員・子どもたちの未来を守る為、現場のリアルな声を政策に届けていく。
+              誰もが安心して過ごせる学校とは言えなくなっている現実を見過ごすことができず、 19年間勤めた教員を辞め、政治の世界へ飛び込むことを決意。 子どもたちの未来を守るため、現場で聞いてきたリアルな声を政策へ届けていく。
             </p>
             <img class="timeline-note-image timeline-note-image--wide" src="assets/classroom-to-assembly-note.png" alt="教室から議会へを表す手書きメモ">
           </li>
@@ -295,7 +292,7 @@
             <article class="activity-card activity-card--family">
               <div class="photo-stack" aria-label="子育ての日々の写真">
                 <img src="assets/activity-parenting-1-upright.jpg" alt="子どもたちを抱く中村ちから">
-                <img src="assets/activity-parenting-3-upright.jpg" alt="子どもたちと出かける中村ちから">
+                <img src="assets/activity-parenting-stroller.png" alt="双子の子どもたちと出かける中村ちから">
               </div>
               <div>
                 <strong>子育てに奮闘</strong>
@@ -318,13 +315,18 @@
             </article>
           </div>
         </div>
-        <a class="button button--secondary section-button profile__button" href="https://forms.gle/xyLZm7uFSbMcXTNT6" target="_blank" rel="noopener">中村ちからを応援する</a>
+        <!-- <a class="button button--secondary section-button profile__button" href="https://forms.gle/xyLZm7uFSbMcXTNT6" target="_blank" rel="noopener">中村ちからを応援する</a> -->
+        <a class="header-cta button button--secondary section-button" href="https://forms.gle/xyLZm7uFSbMcXTNT6" target="_blank" rel="noopener">
+        <span class="header-cta__main">後援会加入</span>
+        <span class="header-cta__sub">中村ちからサポーターズ</span>
+      </a>
       </section>
 
       <section class="supporters section" aria-labelledby="supporters-title">
         <div class="supporters__copy">
           <span class="section__label">中村ちからサポーターズ</span>
-          <h2 id="supporters-title"><span>サポーターのバトンを</span><span>繋ぎませんか？</span></h2>
+
+          <h2 id="supporters-title"><span class="supporters-title__lead"><span>サポーターの</span><span>バトンを</span></span><span><ruby>繋<rt>つな</rt></ruby>ぎませんか？</span></h2>
           <p>
             子どもたちのため、働く仲間のために、中村ちからさんは活動しています。
             垂水区のみなさんの声を届ける挑戦を、あなたの“ちから”で支えてください。
@@ -362,32 +364,6 @@
             <img src="assets/supporter-extra-1.jpg" alt="">
             <img src="assets/supporter-extra-2.jpg" alt="">
           </div>
-          <div class="supporter-roster__list">
-            <article>
-              <span>元市議会議員</span>
-              <strong>藤原 武光</strong>
-            </article>
-            <article>
-              <span>連合兵庫 会長</span>
-              <strong>那須 健</strong>
-            </article>
-            <article>
-              <span>連合神戸議長</span>
-              <strong>加藤 明</strong>
-            </article>
-            <article>
-              <span>兵庫県教職員組合</span>
-              <strong>森戸 卓也</strong>
-            </article>
-            <article>
-              <span>教悠会事務局長</span>
-              <strong>神田 孝治</strong>
-            </article>
-            <article>
-              <span>中村ちからサポーターズ会長</span>
-              <strong>長嶋 和代</strong>
-            </article>
-          </div>
         </div>
       </section>
 
@@ -414,10 +390,18 @@
           </a>
         </div>
         <div class="office-contact__sns" aria-label="SNS">
-          <span>Instagram</span>
-          <span>YouTube</span>
-          <span>X</span>
-          <span>TikTok</span>
+          <a href="https://www.instagram.com/chikaranakamura.kobe/?igsh=MWZlODZxbjZqMDd0dQ%3D%3D&amp;fbclid=IwY2xjawSDJQxleHRuA2FlbQIxMABicmlkETF3Y2EzMk9UNGg0dTNLWUJJc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHmre3jcgj8K95xxLuRQ5VuGFmtSCeAnVPZbsjvnIU3fp2IO-GxK3aR9ks19__aem_VcHxnGG90ynlDeO4yqgNmg" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="assets/instagram_sns_01.png" alt="">
+          </a>
+          <a href="https://youtube.com/@chikaranakamura.kobe.youtube?si=FIj_IE7kZdzm6-PQ" target="_blank" rel="noopener" aria-label="YouTube">
+            <img src="assets/youtube_sns_02.png" alt="">
+          </a>
+          <a href="https://x.com/chikara_kobe" target="_blank" rel="noopener" aria-label="X">
+            <img src="assets/x_sns_03.png" alt="">
+          </a>
+          <a href="https://www.tiktok.com/@chikara.kobe?_r=1&amp;_t=ZS-96gTynZhwzk" target="_blank" rel="noopener" aria-label="TikTok">
+            <img src="assets/tiktok_sns_04.png" alt="">
+          </a>
         </div>
       </section>
     </main>
@@ -444,7 +428,8 @@
     </footer>
 
     <a class="floating-cta" href="https://forms.gle/xyLZm7uFSbMcXTNT6" target="_blank" rel="noopener">
-      後援会に加入
+      <span class="floating-cta__main">後援会加入</span>
+      <span class="floating-cta__sub">中村ちからサポーターズ</span>
     </a>
   </body>
 </html>
